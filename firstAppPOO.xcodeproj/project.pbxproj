@@ -12,6 +12,7 @@
 		8A99FAC41EA5347C00381EEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A99FAC21EA5347C00381EEC /* Main.storyboard */; };
 		8A99FAC61EA5347C00381EEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A99FAC51EA5347C00381EEC /* Assets.xcassets */; };
 		8A99FAC91EA5347C00381EEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A99FAC71EA5347C00381EEC /* LaunchScreen.storyboard */; };
+		8A99FAD21EA53E8200381EEC /* Mazda3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A99FAD11EA53E8100381EEC /* Mazda3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		8A99FAC51EA5347C00381EEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A99FAC81EA5347C00381EEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A99FACA1EA5347C00381EEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A99FAD01EA534D500381EEC /* MyPlaygroundPOO.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlaygroundPOO.playground; sourceTree = "<group>"; };
+		8A99FAD11EA53E8100381EEC /* Mazda3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mazda3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,8 @@
 			children = (
 				8A99FABE1EA5347B00381EEC /* AppDelegate.swift */,
 				8A99FAC01EA5347B00381EEC /* ViewController.swift */,
+				8A99FAD11EA53E8100381EEC /* Mazda3.swift */,
+				8A99FAD01EA534D500381EEC /* MyPlaygroundPOO.playground */,
 				8A99FAC21EA5347C00381EEC /* Main.storyboard */,
 				8A99FAC51EA5347C00381EEC /* Assets.xcassets */,
 				8A99FAC71EA5347C00381EEC /* LaunchScreen.storyboard */,
@@ -136,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A99FAD21EA53E8200381EEC /* Mazda3.swift in Sources */,
 				8A99FAC11EA5347B00381EEC /* ViewController.swift in Sources */,
 				8A99FABF1EA5347B00381EEC /* AppDelegate.swift in Sources */,
 			);
@@ -261,10 +267,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = firstAppPOO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.morga.firstAppPOO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -273,10 +281,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = firstAppPOO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.morga.firstAppPOO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

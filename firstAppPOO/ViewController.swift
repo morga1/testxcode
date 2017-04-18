@@ -10,16 +10,29 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var labelTitulo: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        labelTitulo.text = "Fábrica de Automóviles "
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func crearObjeto(_ sender: UIButton) {
+        print("Se creo un objeto")
     }
 
+    @IBAction func mostrarPropiedades(_ sender: UIButton) {
+        print("Mostrar propiedades")
+    }
 
+    @IBAction func encender(_ sender: UIButton) {
+        print("encender")
+    }
+    
+    @IBAction func acelerar(_ sender: UIButton) {
+        print("acelerar")
+    }
+    
 }
 
