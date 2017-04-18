@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var labelTitulo: UILabel!
     
-    var ObjMazda3:Mazda3?
+    var ObjMazda3Mini:Mazda3Mini?
     
     var varGlobal:Int = 18
     
@@ -23,21 +23,25 @@ class ViewController: UIViewController {
     }
 
     @IBAction func crearObjeto(_ sender: UIButton) {
+        ObjMazda3Mini = Mazda3Mini()
         print("Se creo el objeto")
-        ObjMazda3 = Mazda3()
     }
-
+    
     @IBAction func mostrarPropiedades(_ sender: UIButton) {
-        print("El Mazda 3 es de tamaño \(ObjMazda3?.tamaño), tiene \(ObjMazda3?.numeroPuertas), es de color \(ObjMazda3?.color) y su precio es de \(ObjMazda3?.precio)")
+    
+        print("El Mazda 3 es de tamaño \(ObjMazda3Mini!.tamaño), tiene \(ObjMazda3Mini!.numeroPuertas), es de color \(ObjMazda3Mini!.color) y su precio es de \(ObjMazda3Mini!.precio) y su porcentaje de carga es \(ObjMazda3Mini!.porcentajeCarga)")
     }
 
     @IBAction func encender(_ sender: UIButton) {
-        ObjMazda3?.encender()
+        ObjMazda3Mini?.encender()
     }
     
     @IBAction func acelerar(_ sender: UIButton) {
-        ObjMazda3?.acelerar()
+        ObjMazda3Mini?.acelerar()
     }
     
+    @IBAction func recargar(_ sender: UIButton) {
+        ObjMazda3Mini?.recargar()
+    }
 }
 
